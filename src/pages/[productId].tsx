@@ -2,8 +2,11 @@
 import { ContactButton } from "@/components/atoms/ContactButton";
 import DescriptionAccordion from "@/components/atoms/DescriptionAccordion";
 import ProductImages from "@/components/atoms/ProductImages";
+import ProductPageSkeleton from "@/components/skeleton/ProductPageSkeleton";
 import { mockhouses } from "@/mock";
+import { Product } from "@/types";
 import { formatCurrencyBRL } from "@/utils/formatCurrency";
+import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 
 export default function House() {
@@ -13,7 +16,7 @@ export default function House() {
   const product = mockhouses.find((house) => house.id === productId);
 
   if (!product) {
-    return <main>Carregando produto</main>;
+    return <ProductPageSkeleton />;
   }
   const { street, city, neighboorhood, number, state } = product.address;
 

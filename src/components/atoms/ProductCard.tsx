@@ -8,10 +8,9 @@ export default function ProductCard({
 }: Readonly<{ product: Product }>) {
   return (
     <Link href={`/${product.id}`}>
-      <div className="flex flex-col gap-4 border p-4 rounded-md">
+      <div className="flex flex-col gap-2 border p-4 rounded-md h-full">
         <img src={product.images[0]} alt={product.name} className="rounded" />
-
-        <h2>
+        <h2 className="text-base font-bold">
           {formatCurrencyBRL(product.price)}{" "}
           {product.type === "aluguel" && "p/mês"}
         </h2>
@@ -22,11 +21,10 @@ export default function ProductCard({
             </p>
           ))}
         </div>
-        <p>{product.description.split(" ").slice(0, 8).join(" ")}...</p>
-        <span>
-          {product.address.neighboorhood}, {product.address.city},
-          {product.address.state},
-        </span>
+        <p className="text-gray-500 text-xs">
+          {product.address.neighboorhood}, {product.address.city} -{" "}
+          {product.address.state}
+        </p>
       </div>
     </Link>
   );
