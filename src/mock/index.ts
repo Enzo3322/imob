@@ -5,7 +5,8 @@ export const mockhouses: Product[] = [
   {
     id: "1",
     name: "Casa Espaçosa",
-    description: "Linda casa com amplo espaço interno e jardim.",
+    description:
+      "Bem-vindo à sua futura casa dos sonhos! Esta encantadora residência, localizada em um bairro tranquilo e arborizado, oferece uma combinação perfeita de elegância e conforto. Com uma fachada imponente, esta casa de dois andares exibe um charme clássico, complementado por jardins meticulosamente cuidados que proporcionam uma atmosfera serena. Ao entrar, você será recebido por espaços amplos e luminosos. A sala de estar, com sua lareira acolhedora, é ideal para relaxar em noites aconchegantes. A cozinha gourmet, equipada com eletrodomésticos modernos e bancadas de granito, é um convite à culinária refinada. Os quartos espaçosos oferecem refúgios privados, enquanto a suíte principal impressiona com um banheiro luxuoso e um closet generoso. Além disso, a casa conta com uma área de entretenimento versátil, que pode ser adaptada para atender às suas necessidades, seja como um escritório em casa ou uma sala de jogos. O quintal, cercado por uma paisagem exuberante, apresenta um deck espaçoso, perfeito para reuniões ao ar livre e momentos de lazer. Esta propriedade é um convite para criar memórias duradouras e viver uma vida de sofisticação e conforto. Não perca a oportunidade de fazer desta casa o seu lar!",
     type: "compra",
     contact: {
       email: "teste@gmail.com",
@@ -92,7 +93,11 @@ export const mockhouses: Product[] = [
     amenities: [
       { iconImage: "icon7.jpg", name: "Quartos", value: "4" },
       { iconImage: "icon8.jpg", name: "Banheiros", value: "3" },
-      { iconImage: "icon9.jpg", name: "Piscina Privativa", value: "Sim" },
+      {
+        iconImage: "https://cdn-icons-png.flaticon.com/512/2088/2088136.png",
+        name: "Piscina",
+        value: "Sim",
+      },
     ],
     flags: ["Segurança 24h", "Aceita permuta"],
     address: {
@@ -186,7 +191,11 @@ export const mockhouses: Product[] = [
     amenities: [
       { iconImage: "icon7.jpg", name: "Quartos", value: "4" },
       { iconImage: "icon8.jpg", name: "Banheiros", value: "3" },
-      { iconImage: "icon9.jpg", name: "Piscina Privativa", value: "Sim" },
+      {
+        iconImage: "https://cdn-icons-png.flaticon.com/512/2088/2088136.png",
+        name: "Piscina",
+        value: "Sim",
+      },
     ],
     flags: ["Segurança 24h", "Aceita permuta"],
     address: {

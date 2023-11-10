@@ -1,9 +1,12 @@
-export function addQueryParam(key: string, value: string) {
+export function addQueryParam(key: string, value: string | null | undefined) {
   const currentUrl = new URL(window.location.href);
-
   const params = new URLSearchParams(currentUrl.search);
 
-  params.set(key, value);
+  if (value) {
+    params.set(key, value);
+  } else {
+    params.delete(key);
+  }
 
   currentUrl.search = params.toString();
 
