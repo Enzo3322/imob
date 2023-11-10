@@ -10,11 +10,12 @@ export interface Product {
   type: "aluguel" | "compra";
   price: number;
   images: string[];
-  amenities: {
-    iconImage: string;
-    name: string;
-    value: string;
-  }[];
+  specifications: {
+    bathroom: string;
+    vacancies: string;
+    rooms: string;
+    meters: string;
+  };
   flags: string[];
   address: {
     state: string;

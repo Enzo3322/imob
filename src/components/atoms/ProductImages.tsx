@@ -12,12 +12,12 @@ export default function ProductImages({ product }: { product: Product }) {
   };
 
   return (
-    <section className="max-w-[500px]">
-      <div className="mb-4">
-        <img src={currentImage} alt={product.name} className="rounded" />
+    <section className="md:w-[50%] w-full">
+      <div className="mb-4 max-w-full">
+        <img src={currentImage} alt={product.name} className="rounded " />
       </div>
       <div className="flex gap-4">
-        <div className="w-full whitespace-nowrap overflow-x-auto">
+        <div className="w-screen whitespace-nowrap overflow-x-auto">
           <div className="flex w-max space-x-4">
             {images.map((image, i) => (
               <button

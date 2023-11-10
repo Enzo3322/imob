@@ -28,11 +28,12 @@ export const mockhouses: Product[] = [
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
     ],
-    amenities: [
-      { iconImage: "icon1.jpg", name: "Quartos", value: "3" },
-      { iconImage: "icon2.jpg", name: "Banheiros", value: "2" },
-      { iconImage: "icon3.jpg", name: "Área Externa", value: "Sim" },
-    ],
+    specifications: {
+      bathroom: "2",
+      vacancies: "3",
+      rooms: "4",
+      meters: "150",
+    },
     flags: ["Pronto para morar", "Aceita financiamento"],
     address: {
       state: "São Paulo",
@@ -59,11 +60,12 @@ export const mockhouses: Product[] = [
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
     ],
-    amenities: [
-      { iconImage: "icon4.jpg", name: "Quartos", value: "2" },
-      { iconImage: "icon5.jpg", name: "Banheiros", value: "1" },
-      { iconImage: "icon6.jpg", name: "Varanda", value: "Sim" },
-    ],
+    specifications: {
+      bathroom: "2",
+      vacancies: "3",
+      rooms: "4",
+      meters: "150",
+    },
     flags: ["Condomínio incluído", "Mobiliado"],
     address: {
       state: "Rio de Janeiro",
@@ -90,15 +92,12 @@ export const mockhouses: Product[] = [
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
     ],
-    amenities: [
-      { iconImage: "icon7.jpg", name: "Quartos", value: "4" },
-      { iconImage: "icon8.jpg", name: "Banheiros", value: "3" },
-      {
-        iconImage: "https://cdn-icons-png.flaticon.com/512/2088/2088136.png",
-        name: "Piscina",
-        value: "Sim",
-      },
-    ],
+    specifications: {
+      bathroom: "2",
+      vacancies: "3",
+      rooms: "4",
+      meters: "150",
+    },
     flags: ["Segurança 24h", "Aceita permuta"],
     address: {
       state: "Minas Gerais",
@@ -126,11 +125,12 @@ export const mockhouses: Product[] = [
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
     ],
-    amenities: [
-      { iconImage: "icon1.jpg", name: "Quartos", value: "3" },
-      { iconImage: "icon2.jpg", name: "Banheiros", value: "2" },
-      { iconImage: "icon3.jpg", name: "Área Externa", value: "Sim" },
-    ],
+    specifications: {
+      bathroom: "2",
+      vacancies: "3",
+      rooms: "4",
+      meters: "150",
+    },
     flags: ["Pronto para morar", "Aceita financiamento"],
     address: {
       state: "São Paulo",
@@ -157,11 +157,12 @@ export const mockhouses: Product[] = [
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
     ],
-    amenities: [
-      { iconImage: "icon4.jpg", name: "Quartos", value: "2" },
-      { iconImage: "icon5.jpg", name: "Banheiros", value: "1" },
-      { iconImage: "icon6.jpg", name: "Varanda", value: "Sim" },
-    ],
+    specifications: {
+      bathroom: "2",
+      vacancies: "3",
+      rooms: "4",
+      meters: "150",
+    },
     flags: ["Condomínio incluído", "Mobiliado"],
     address: {
       state: "Rio de Janeiro",
@@ -188,15 +189,12 @@ export const mockhouses: Product[] = [
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
     ],
-    amenities: [
-      { iconImage: "icon7.jpg", name: "Quartos", value: "4" },
-      { iconImage: "icon8.jpg", name: "Banheiros", value: "3" },
-      {
-        iconImage: "https://cdn-icons-png.flaticon.com/512/2088/2088136.png",
-        name: "Piscina",
-        value: "Sim",
-      },
-    ],
+    specifications: {
+      bathroom: "2",
+      vacancies: "3",
+      rooms: "4",
+      meters: "150",
+    },
     flags: ["Segurança 24h", "Aceita permuta"],
     address: {
       state: "Minas Gerais",
@@ -223,11 +221,12 @@ export const mockhouses: Product[] = [
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
       "https://b6d3c5t3.rocketcdn.me/wp-content/uploads/2022/02/Mansao-de-Alto-Luxo-frente-mar-a-venda-em-Interlagos-Bahia-1.jpg",
     ],
-    amenities: [
-      { iconImage: "icon10.jpg", name: "Quarto", value: "1" },
-      { iconImage: "icon11.jpg", name: "Banheiro", value: "1" },
-      { iconImage: "icon12.jpg", name: "Cozinha", value: "Equipada" },
-    ],
+    specifications: {
+      bathroom: "2",
+      vacancies: "3",
+      rooms: "4",
+      meters: "150",
+    },
     flags: ["Mobília inclusa", "Aceita pets"],
     address: {
       state: "São Paulo",

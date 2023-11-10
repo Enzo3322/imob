@@ -57,7 +57,7 @@ export default function ProductListFilter() {
       </div>
       <Button
         onClick={applyFilter}
-        className="text-center flex items-center justify-center gap-2 text-base w-full"
+        className="bg-blue-600 hover:bg-blue-700 text-center flex items-center justify-center gap-2 text-base w-full"
       >
         <AiOutlineSearch size="22" />
         Buscar
