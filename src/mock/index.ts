@@ -34,7 +34,6 @@ export const mockhouses: Product[] = [
       rooms: "4",
       meters: "150",
     },
-    flags: ["Pronto para morar", "Aceita financiamento"],
     address: {
       state: "São Paulo",
       city: "São Paulo",
@@ -66,7 +65,6 @@ export const mockhouses: Product[] = [
       rooms: "4",
       meters: "150",
     },
-    flags: ["Condomínio incluído", "Mobiliado"],
     address: {
       state: "Rio de Janeiro",
       city: "Rio de Janeiro",
@@ -98,7 +96,6 @@ export const mockhouses: Product[] = [
       rooms: "4",
       meters: "150",
     },
-    flags: ["Segurança 24h", "Aceita permuta"],
     address: {
       state: "Minas Gerais",
       city: "Belo Horizonte",
@@ -131,7 +128,6 @@ export const mockhouses: Product[] = [
       rooms: "4",
       meters: "150",
     },
-    flags: ["Pronto para morar", "Aceita financiamento"],
     address: {
       state: "São Paulo",
       city: "São Paulo",
@@ -163,7 +159,6 @@ export const mockhouses: Product[] = [
       rooms: "4",
       meters: "150",
     },
-    flags: ["Condomínio incluído", "Mobiliado"],
     address: {
       state: "Rio de Janeiro",
       city: "Rio de Janeiro",
@@ -195,7 +190,6 @@ export const mockhouses: Product[] = [
       rooms: "4",
       meters: "150",
     },
-    flags: ["Segurança 24h", "Aceita permuta"],
     address: {
       state: "Minas Gerais",
       city: "Belo Horizonte",
@@ -227,7 +221,6 @@ export const mockhouses: Product[] = [
       rooms: "4",
       meters: "150",
     },
-    flags: ["Mobília inclusa", "Aceita pets"],
     address: {
       state: "São Paulo",
       city: "São Paulo",

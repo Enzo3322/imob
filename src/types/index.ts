@@ -16,7 +16,6 @@ export interface Product {
     rooms: string;
     meters: string;
   };
-  flags: string[];
   address: {
     state: string;
     city: string;

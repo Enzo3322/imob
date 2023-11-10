@@ -1,15 +1,20 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  const router = useRouter();
+  const isAdminRoute = router.pathname.includes("/admin");
+
   return (
     <header>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 ">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link href="/" className="flex items-center">
-            <img src="image.png" className="mr-3 h-6 sm:h-9" alt="Imob Logo" />
+            <img src="/image.png" className="mr-3 h-6 sm:h-9" alt="Imob Logo" />
           </Link>
           <div className="flex items-center lg:order-2">
             <a
@@ -60,15 +65,38 @@ export default function Header() {
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-              <li>
-                <Link
-                  href="/"
-                  className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
-                  aria-current="page"
-                >
-                  Home
-                </Link>
-              </li>
+              {!isAdminRoute ? (
+                <li>
+                  <Link
+                    href="/"
+                    className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                    aria-current="page"
+                  >
+                    Home
+                  </Link>
+                </li>
+              ) : (
+                <>
+                  <li>
+                    <Link
+                      href="/admin/feed"
+                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      aria-current="page"
+                    >
+                      Feed de contato
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/admin/imoveis"
+                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      aria-current="page"
+                    >
+                      Imoveis
+                    </Link>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
         </div>
