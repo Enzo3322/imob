@@ -218,6 +218,12 @@ export default function Houses() {
                 })}
             </DropdownMenuContent>
           </DropdownMenu>
+          <Button
+            className="ml-4 bg-green-600 hover:bg-green-500"
+            onClick={() => router.push("/admin/imoveis/create")}
+          >
+            Adiciona imóvel
+          </Button>
         </div>
         <div className="rounded-md border">
           <Table>

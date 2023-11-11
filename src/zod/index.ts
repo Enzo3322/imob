@@ -26,7 +26,7 @@ export const formSchemaUpdateHouse = z.object({
   type: z.string().refine((value) => ["aluguel", "compra"].includes(value), {
     message: "Tipo de transação inválido",
   }),
-  price: z.number().min(0, {
+  price: z.string().min(0, {
     message: "Insira um preço válido",
   }),
   images: z.array(

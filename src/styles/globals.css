@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.markdown-style-wrapper {
+  margin: 20px 0;
+  border: 1px solid;
+}
+
+.markdown-style-wrapper textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.markdown-style-wrapper p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.markdown-style-wrapper h1 {
+    font-size: 20px;
+}
+.markdown-style-wrapper h2 {
+    font-size: 18px;
+}
+.markdown-style-wrapper h3 {
+    font-size: 16px;
+}
+
+.markdown-style-wrapper h1,
+.markdown-style-wrapper h2,
+.markdown-style-wrapper h3,
+.markdown-style-wrapper h4,
+.markdown-style-wrapper h5,
+.markdown-style-wrapper h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.markdown-style-wrapper a {
+  color: #0366d6;
+}
+
+.markdown-style-wrapper ul,
+.markdown-style-wrapper ol {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.markdown-style-wrapper code {
+  background-color: #f1f1f1;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.markdown-style-wrapper blockquote {
+  border-left: 2px solid #dfe2e5;
+  margin: 0 0 0 20px;
+  padding: 0 0 0 16px;
+  color: #6a737d;
+}
