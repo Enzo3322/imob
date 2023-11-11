@@ -13,8 +13,12 @@ export default function ProductImages({ product }: { product: Product }) {
 
   return (
     <section className="md:w-[50%] w-full">
-      <div className="mb-4 max-w-full">
-        <img src={currentImage} alt={product.name} className="rounded " />
+      <div className="mb-4 max-w-full flex items-center justify-center bg-slate-200 rounded">
+        <img
+          src={currentImage}
+          alt={product.name}
+          className="rounded md:max-h-80 max-h-48"
+        />
       </div>
       <div className="flex gap-4">
         <div className="w-screen whitespace-nowrap overflow-x-auto">

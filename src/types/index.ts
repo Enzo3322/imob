@@ -25,3 +25,13 @@ export interface Product {
     neighboorhood: string;
   };
 }
+
+export interface FeedItem {
+  id: string;
+  houseId: string;
+  status: string;
+  contactInfo: {
+    phone: string;
+    name: string;
+  };
+}

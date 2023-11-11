@@ -26,7 +26,7 @@ export default function ProductListFilter() {
 
   return (
     <div className="flex flex-col items-left w-full rounded bg-slate-100 border mb-8 gap-4 p-4">
-      <div className="w-full">
+      <div className="md:w-80 w-full">
         <label htmlFor="term">Localização do imóvel</label>
         <Input
           className="w-full"
@@ -35,7 +35,7 @@ export default function ProductListFilter() {
           onBlur={(e) => setFilters({ ...filters, search: e.target.value })}
         />
       </div>
-      <div className="w-full ">
+      <div className="w-full">
         <label htmlFor="term">Modelo de contrato</label>
         <Select
           onValueChange={(e) => {

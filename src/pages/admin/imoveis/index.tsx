@@ -95,6 +95,20 @@ export const columns: ColumnDef<Product>[] = [
     },
     cell: ({ row }) => <div>{row.getValue("name")}</div>,
   },
+  {
+    accessorKey: "address",
+    header: () => {
+      return <Button variant="ghost">Cidade</Button>;
+    },
+    cell: ({ row }) => <div>{(row.getValue("address") as any).city}</div>,
+  },
+  {
+    accessorKey: "contactInfo",
+    header: () => {
+      return <Button variant="ghost">Estado</Button>;
+    },
+    cell: ({ row }) => <div>{(row.getValue("address") as any).state}</div>,
+  },
 
   {
     id: "actions",
@@ -171,10 +185,10 @@ export default function Houses() {
       <div className="w-full">
         <div className="flex items-center py-4">
           <Input
-            placeholder="Filter emails..."
-            value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
+            placeholder="Filtrar por nome..."
+            value={(table.getColumn("name")?.getFilterValue() as string) ?? ""}
             onChange={(event) =>
-              table.getColumn("email")?.setFilterValue(event.target.value)
+              table.getColumn("name")?.setFilterValue(event.target.value)
             }
             className="max-w-sm"
           />

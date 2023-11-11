@@ -33,49 +33,25 @@ export default function EditHouse() {
     return <h1>Carregando registro...</h1>;
   }
 
-  const fields = [
-    "name",
-    "description",
-    "type",
-    "contact.phone",
-    "contact.email",
-    "contact.name",
-    "price",
-    "images",
-    "specifications.bathroom",
-    "specifications.vacancies",
-    "specifications.rooms",
-    "specifications.meters",
-    "address.state",
-    "address.city",
-    "address.street",
-    "address.number",
-    "address.postalCode",
-    "address.neighboorhood",
-  ];
-
   return (
     <main className=" max-w-screen-xl m-auto p-4 pt-12">
       <div className="min-h-screen flex items-start justify-center">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className=" w-full">
             <div className="grid grid-cols-3 gap-2">
-              {fields.map((fieldR) => (
-                <FormField
-                  key={fieldR}
-                  control={form.control}
-                  name={`${fieldR}`}
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>{fieldR}</FormLabel>
-                      <FormControl>
-                        <Input placeholder={fieldR} {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              ))}
+              <FormField
+                control={form.control}
+                name={`name`}
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Nome</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Nome do imóvel" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
             </div>
 
             <div className="flex gap-2">
