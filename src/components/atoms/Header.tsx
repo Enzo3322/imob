@@ -66,15 +66,35 @@ export default function Header() {
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
               {!isAdminRoute ? (
-                <li>
-                  <Link
-                    href="/"
-                    className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
-                    aria-current="page"
-                  >
-                    Home
-                  </Link>
-                </li>
+                <>
+                  <li>
+                    <Link
+                      href="/?type=comprar"
+                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      aria-current="page"
+                    >
+                      Comprar
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/?type=alugar"
+                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      aria-current="page"
+                    >
+                      Alugar
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/?type=temporada"
+                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      aria-current="page"
+                    >
+                      Temporada
+                    </Link>
+                  </li>
+                </>
               ) : (
                 <>
                   <li>
