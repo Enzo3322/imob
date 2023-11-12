@@ -17,12 +17,6 @@ export default function Header() {
             <img src="/image.png" className="mr-3 h-6 sm:h-9" alt="Imob Logo" />
           </Link>
           <div className="flex items-center lg:order-2">
-            <a
-              href="#"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2   focus:outline-none "
-            >
-              Corretores
-            </a>
             <button
               onClick={() => setOpen(!open)}
               data-collapse-toggle="mobile-menu-2"
@@ -70,7 +64,8 @@ export default function Header() {
                   <li>
                     <Link
                       href="/?type=comprar"
-                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      onClick={() => setOpen(false)}
+                      className="block py-2 pr-4 pl-3  lg:bg-transparent text-blue-700 lg:p-0"
                       aria-current="page"
                     >
                       Comprar
@@ -79,7 +74,8 @@ export default function Header() {
                   <li>
                     <Link
                       href="/?type=alugar"
-                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      onClick={() => setOpen(false)}
+                      className="block py-2 pr-4 pl-3  lg:bg-transparent text-blue-700 lg:p-0"
                       aria-current="page"
                     >
                       Alugar
@@ -88,7 +84,8 @@ export default function Header() {
                   <li>
                     <Link
                       href="/?type=temporada"
-                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      onClick={() => setOpen(false)}
+                      className="block py-2 pr-4 pl-3  lg:bg-transparent text-blue-700 lg:p-0"
                       aria-current="page"
                     >
                       Temporada
@@ -100,7 +97,7 @@ export default function Header() {
                   <li>
                     <Link
                       href="/admin/feed"
-                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      className="block py-2 pr-4 pl-3  lg:bg-transparent text-blue-700 lg:p-0"
                       aria-current="page"
                     >
                       Feed de contato
@@ -109,7 +106,7 @@ export default function Header() {
                   <li>
                     <Link
                       href="/admin/imoveis"
-                      className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0"
+                      className="block py-2 pr-4 pl-3  lg:bg-transparent text-blue-700 lg:p-0"
                       aria-current="page"
                     >
                       Imoveis
