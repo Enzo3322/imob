@@ -1,19 +1,17 @@
-import ProductList from "@/components/atoms/ProductList";
-import ProductListFilter from "@/components/atoms/ProductListFilter";
 import { mockhouses } from "@/mock";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
 
 const products = mockhouses;
+
+const mainContainerClasses =
+  "max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen";
 
 export default function Home() {
   return (
     <main
-      className={`flex md:flex-row flex-col min-h-screen max-w-screen-xl m-auto gap-8 items-start justify-center md:pt-12 md:p-8 p-3 ${inter.className}`}
-    >
-      <ProductListFilter />
-      <ProductList products={products} />
-    </main>
+      className={`${poppins.className} ${mainContainerClasses} bg-red-100`}
+    ></main>
   );
 }
